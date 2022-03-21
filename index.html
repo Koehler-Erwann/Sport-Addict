@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Sport Addict  - Le sport à tous les niveaux</title>
+        <meta name="Auteurs" content="Erwann"/>
+        <meta name="description" content="Bienvenue sur Sport Addict ! Sur ce site, vous découvrirez plusieurs sports."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://kit.fontawesome.com/a89df1ab36.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/recherche.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                
+                <ul>
+                    <li><a href="#idees-activites">Idée d'activité</a></li>
+                    <li><a href="#evenements">Les événements à venir</a></li>
+                    <li><a href="#inscrire">S'inscrire</a></li>
+                </ul>
+
+                
+            </nav>
+
+        <div id="div-img-logo">
+            <img id="img-logo"src="images/logo/SportAddict.png" alt="Logo de Sport Addict">
+        </div>
+
+    </header> 
+    
+        
+        <main>
+
+        <h1>
+            Bienvenue sur Sport Addict !
+        </h1>
+
+        <div id="petit_ecran">
+            <ul>
+                <li><a href="#idees-activites">Idée d'activité</a></li>
+                <li><a href="#evenements">Les événements à venir</a></li>
+                <li><a href="#inscrire">S'inscrire</a></li>
+            </ul>
+        </div>
+
+        <h2 id="idees-activites">Idée d'activité</h2>
+
+            <div id="div-rechercher">
+                Trouvez le sport qui vous correspond,
+                en plein centre ville ou en pleine nature
+                <div id="zone-texte">
+                    <input type="text" id="zone_de_texte" >
+                    <i class="fa-solid fa-magnifying-glass" onclick="recherche()"></i>
+                </div>    
+            </div>
+
+
+        <div class="conteneur-images-sport">
+    
+            <div class="divImageSport" id="basket"> 
+                <p class="pImageSport" >Le basket</p>
+                Gérer le rebond
+                <img class="img-sport" src="./images/activites/basketball.jpg" alt="Basketball">    
+            </div>
+            
+            <div class="divImageSport" id="fitness">
+                <p class="pImageSport">Le fitness</p>
+                Harmoniser son corps
+                <img class="img-sport" src="./images/activites/fitness.jpg" alt="Fitness">
+            </div>
+
+            <div class="divImageSport" id="crossfit">
+                <p class="pImageSport"> Le crossfit</p> 
+                Pour devenir un athlète complet
+                <img class="img-sport" src="./images/activites/crossfit.jpg" alt="Crossfit">
+            </div>
+               
+             <div class="divImageSport" id="boxe">
+                <p class="pImageSport">La boxe</p>
+                Mouvement de jambes et crochet du droit
+                <img class="img-sport" src="./images/activites/boxe.jpg" alt="Boxe">
+            </div>   
+                
+            <div class="divImageSport" id="karaté">
+                <p class="pImageSport">Le karaté</p> 
+                Les katas pour éviter la cata
+                <img class="img-sport" src="./images/activites/karaté.jpg" alt="Karaté">   
+            </div>
+
+            <div class="divImageSport" id="musculation"> 
+                <p class="pImageSport">La musculation</p>
+                Aussi puissant qu'harmonieux
+                <img class="img-sport" src="./images/activites/musculation.jpg" alt="Musculation">  
+            </div>
+
+        </div>
+
+
+
+        <div>
+
+            <h2>Les plus populaires</h2>     
+            
+            <div class="divImageSport" id="course à pied">
+                <p class="pImageSport">La course à pied</p>
+                Une paire de basket et à nous les grands espaces
+                <img class="img-sport" src="./images/populaire/running.jpg" alt="Running">  
+            </div>
+
+            <div class="divImageSport" id="yoga">
+                <p class="pImageSport">Le yoga</p>
+                Calme, méditation et musculation interne
+                <img class="img-sport" src="./images/populaire/yoga.jpg" alt="Yoga">
+            </div>
+
+            <div class="divImageSport" id="nataion">
+                <p class="pImageSport" >La natation</p>
+                Force et justesse du mouvement
+                <img class="img-sport" src="./images/populaire/natation.jpg" alt="Natation">
+            </div>
+            
+        </div>
+
+
+        <div class="conteneur-images-sport">
+
+            <h2 id="evenements">Les événements à venir</h2>
+
+                <div class="divImageSport">
+                    <p class="pImageSport">Descente des chutes éternelles</p>
+                    <img class="img-sport" src="./images/evenement/canoe.jpg" alt="Canoe">
+            
+                    
+                <div class="divImageSport"></div>
+                    <p class="pImageSport">Recrutement des nouveaux joueurs</p>
+                    <img class="img-sport" src="./images/evenement/football.jpg" alt="Football">
+            
+            
+                <div class="divImageSport"></div>
+                    <p class="pImageSport">Enduro de la veille de l'automne</p>
+                    <img class="img-sport" src="./images/evenement/motocross.jpg" alt="Motocross">
+            
+            
+                <div class="divImageSport"></div>
+                    <p class="pImageSport">Exhibition intercontinentale des masters Pro</p>
+                    <img class="img-sport" src="./images/evenement/plancheAvoile.jpg" alt="Planche">
+            
+            
+                <div class="divImageSport"></div>
+                    <p class="pImageSport">Découverte des gorges insondables avec une équipe pro</p>
+                    <img class="img-sport" src="./images/evenement/plongée.jpg" alt="Plongée">
+            
+            
+                <div class="divImageSport"></div>
+                    <p class="pImageSport">Ironman de Noël</p>
+                    <img class="img-sport" src="./images/evenement/triathlon.jpg" alt="Triathlon">
+                
+            
+            
+            
+        </div>
+        <div id="inscription-div">
+
+            <h2 id="inscrire">Inscription</h2>
+            
+            Plus de 3500 sportifs nous ont déjà rejoints, pourquoi pas vous ?
+            <br>
+            <br>
+            <a href="pages/inscription.html">Appuyez ici pour vous inscrire</a>
+        </div>
+
+    </main>
+
+        <footer>
+            
+            <ul>
+                <p>A propos</p>
+                <li><a href="pages/enCours.html">Fonctionnement du site</a></li>
+                <li><a href="pages/enCours.html">Conditions générales de vente</a></li>
+                <li><a href="pages/enCours.html">Données et confidentialité</a></li>
+            </ul>
+            <ul>
+                <p>Nos valeurs</p>
+                <li><a href="pages/enCours.html">Charte qualité</a></li>
+                <li><a href="pages/enCours.html">Parlez nous de votre sport</a></li>
+            </ul>
+            <ul>
+                <p>Assistance</p>
+                <li><a href="pages/enCours.html">Centre d'aide</a></li>
+                <li><a href="pages/enCours.html">Nous contacter</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

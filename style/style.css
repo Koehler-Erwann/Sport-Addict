@@ -1,0 +1,251 @@
+body{
+    background-color:black;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+}
+/*********   DEBUT NAV    **************************************************************************/
+#petit_ecran {display:none;}
+nav{
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    top:20px;
+    right:20px;
+    height:100px;
+    width:16%;
+}
+nav ul{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav ul li{
+    width:80%;
+    margin:auto;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.15em;
+}
+nav ul li a:hover{
+    color:white;
+    text-decoration: underline;
+    font-size: 1.25em;
+}
+@media screen and (max-width:1400px) {
+    nav ul {
+        display:none;
+    }
+}
+/********** Le menu pour ecran inferieur a 1400px ****/
+/********** C'est une balise div qui n'est pas comprise dans la balise nav ****/
+@media screen and (max-width:1400px) {
+    #petit_ecran {
+        display:flex;
+        flex-direction: column;
+    }
+    #petit_ecran ul{
+        width:100%;
+        height:100%;
+
+    }
+    #petit_ecran ul li {
+        list-style-type: none;
+    }
+    #petit_ecran ul li a{
+        text-decoration: none;
+        color:black;
+        font-size: 1.10em;
+    }
+    #petit_ecran ul li a:hover{
+        text-decoration: none;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1.20em;
+    }
+    
+}
+
+
+/*********   FIN NAV    **************************************************************************/
+
+/*********   DEBUT IMAGES SPORT    **************************************************************************/
+.conteneur-images-sport{
+    display: flex;
+    flex-flow: column;
+}
+.divImageSport{
+    width:50%;
+    padding-left:25%;
+    padding-right:25%;
+    padding-bottom:5%;
+    padding-top:2%;
+    display: flex;
+    flex-flow: column;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    border-bottom:2px dotted black;
+}
+.divImageSport img{
+    width:100%;
+    margin-top:2%;
+}
+.pImageSport{
+    text-align: center;
+    font-size:2em;
+}
+@media screen and (max-width:1400px) {
+
+    .divImageSport{
+        width:90%;
+        padding-left:5%;
+        padding-right:5%;
+        
+    }    
+}
+/*********   FIN IMAGES SPORT    **************************************************************************/
+
+/*********   DEBUT FOOTER    **************************************************************************/
+footer {
+    background-color: black;
+    border-top:2px solid beige;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  justify-content: center;
+}
+footer ul {
+    width:18%;
+    display: flex;
+    flex-direction: column;
+}
+footer ul p {
+    color:beige;
+    font-size: 1.10em;
+    text-decoration: underline;
+}
+footer ul li a {
+    text-decoration: none;
+    color:white;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+    color:gray;
+}
+
+@media screen and (max-width:1100px) {
+    footer ul {
+        width:30%;
+    }
+}
+@media screen and (max-width:500px) {
+    footer  {
+        flex-direction: column;
+    }
+}
+/*********   FIN FOOTER    **************************************************************************/
+
+/*********   DEBUT TOUT LE RESTE    **************************************************************************/
+main{
+    margin-left:18%;
+    margin-right:18%;
+    padding-left:2%;
+    padding-right:2%;
+    background-color:beige;
+    border-bottom:2px dotted white;
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+    margin-bottom:10%;
+    color:#5d0000;
+}
+
+h2{
+    color:#5d0000;
+    font-size:2em;
+    text-decoration: underline;
+    margin-top:4%;
+
+}
+@media screen and (max-width:1400px) {
+    main  {
+        margin:0;
+    }
+    #div-img-logo{
+        display: none;
+    }
+    h1{
+        font-size: 2.5em;
+        margin-bottom:2%;
+    }
+    h2{
+        font-size:1.5em;
+        margin-top:2%;
+    }
+}
+#div-img-logo{
+    position :fixed;
+    width:16%;
+    top:20px;
+    left:20px;
+}
+#img-logo{
+    width:95%;
+}
+#div-img-logo-droite{
+    position :fixed;
+    top:20px;
+    right:20px;
+}
+.img-sport{
+    width:200px;
+}
+#div-rechercher{
+    display:flex;
+}
+#zone-texte{
+    padding:3px;
+    padding-right:7px;
+    width:17%;
+    margin-left:3%;
+    background-color: white;
+    border:1px solid black
+}
+#div-rechercher input{
+    width:84%;
+    border:none;
+}
+#div-rechercher i{
+    float:right;
+    cursor: pointer;
+    color:black;
+}
+#inscription-div{
+    margin-bottom: 2%;
+}
+@media screen and (max-width:1400px) {
+    #div-rechercher{
+        flex-flow: row wrap;
+    }
+    #div-rechercher input{
+    width:100%;
+    }
+    #zone-texte{
+    width:35%;
+    flex-flow: row ;
+    margin-left: 0;
+    margin-top: 1%;
+    }
+    
+}
+/*********   FIN TOUT LE RESTE    **************************************************************************/
+
+

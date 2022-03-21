@@ -1,0 +1,16 @@
+body {
+    background-color: darkgray;
+}
+
+h1,h2,p,i{
+        color:white;
+}
+
+i{
+    text-decoration: none;
+    font-size: 4em;
+}
+
+p{
+    font-size: 1.2em;
+}
